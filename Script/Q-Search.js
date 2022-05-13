@@ -4,12 +4,10 @@
 #  注：先进入设置更改 Safari 默认搜索为 DuckDuckGO 其他浏览器同理
 # 可自行修改指令或者添加搜索引擎
 
-Quantumult X:
+
 [rewrite_local]
-^https:\/\/duckduckgo.com\/\?q=.+ url script-echo-response https://raw.githubusercontent.com/zZPiglet/Task/master/Q-Search.js
-Surge:
-[Script]
-Q-Search = type=http-request,pattern=^https:\/\/duckduckgo.com\/\?q=.+,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Q-Search.js
+^https:\/\/duckduckgo.com\/\?q=.+ url script-echo-response https://raw.githubusercontent.com/DRElll/QX/main/Script/Q-Search.js
+
 [mitm]
 hostname = duckduckgo.com
  */
